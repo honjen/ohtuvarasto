@@ -23,7 +23,7 @@ jobs:
       - name: Install Pylint
         run: pip install pylint
       - name: Run Pylint
-        run: pylint
+        run: pylint src
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
       - name: Coverage report
